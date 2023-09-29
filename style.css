@@ -1,0 +1,290 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root {
+    --font: 'Poppins', sans-serif;
+    --Red: hsl(0, 100%, 74%);
+    --Green: hsl(154, 59%, 51%);
+    --Blue: hsl(248, 32%, 49%);
+    --Dark-Blue: hsl(249, 10%, 26%);
+    --Grayish-Blue: hsl(246, 25%, 77%);
+    --white: #fff;
+    --border-color: #ccc;
+    --border-color-btn-green: #60b68d;
+}
+
+
+body {
+    font-family: var(--font);
+}
+
+
+#container {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    background-image: url('images/bg-intro-desktop.png');
+    background-repeat: repeat;
+    background-color: var(--Red);
+    align-items: center;
+    justify-content: center;
+}
+
+
+.left__flex {
+    width: 50vw;
+}
+
+
+.right__flex {
+    width: 50vw;
+}
+
+
+
+.btn__purple__box {
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+.btn_purple {
+    background-color: var(--Blue);
+    width: 100%;
+    padding: 20px;
+    text-align: center;
+    border-radius: 7px;
+    color: var(--white);
+    cursor: pointer;
+    display: block;
+    border: none;
+    font-size: 16px;
+    font-weight: 400;
+}
+
+.span__btn__purple {
+    color: var(--Grayish-Blue);
+}
+
+.box__input__white {
+    background-color: var(--white);
+    margin: 0 auto;
+    width: 60%;
+    border-radius: 7px;
+    padding: 3rem 2.5rem;
+    margin-top: 1rem;
+}
+
+
+
+.input {
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.input input {
+    width: 100%;
+    padding: 20px;
+    border-radius: 3px;
+    outline: none;
+    border: 1px solid var(--border-color) ;
+}
+
+
+.input input::placeholder {
+    font-weight: 700;
+    color: black;
+}
+
+
+.btn__green__box {
+    width: 100%;
+    margin-top: 20px
+}
+
+
+.btn__green {
+    width: 100%;
+    text-align: center;
+    cursor: pointer;
+    padding: 15px;
+    background-color: var(--Green);
+    border-radius: 3px;
+    border: 2px solid var(--border-color-btn-green);
+    text-transform: uppercase;
+    color: var(--white);
+    margin-bottom: 1rem;
+}
+
+
+
+.text__bottom__box-white {
+    width: 100%;
+    text-align: center;
+    font-size: 11px;
+}
+
+
+.text__bottom__box-white  p {
+    color: var(--Grayish-Blue);
+}
+
+
+.text__bottom__box-white span {
+    color: var(--Red);
+    font-weight: 600;
+    padding-left: 0.5rem;
+}
+
+
+.text__bottom__box-white span:hover {
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+
+
+.text__box {
+    margin: 0 auto;
+    width: 60%;
+}
+
+
+.title {
+    color: var(--white);
+    font-weight: 600;
+    font-size: 3rem;
+    letter-spacing: 1px;
+    line-height: 3.8rem;
+    margin-bottom: 2rem;
+}
+
+
+
+.p__flex {
+    color: var(--white);
+    font-size: 18px;
+}
+
+
+
+@media (max-width: 780px) {
+    
+    .title {
+        font-size: 2rem;
+        line-height:2.4rem;
+        width: 100%;
+        
+    }
+
+
+    .box__input__white {
+        width: 75%;
+        padding: 3rem 1rem;
+
+    }
+
+    .btn__purple__box {
+        width: 75%;
+    }
+
+
+
+}
+
+
+
+@media (max-width: 525px) {
+
+    #container {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+        background-image: url('images/bg-intro-mobile.png');
+        background-repeat: repeat;
+        background-color: var(--Red);
+        padding: 2rem;
+    }
+
+    .left__flex {
+        width: 100%;
+    }
+
+    .text__box {
+        width: 100%;
+        padding: 1rem 2rem;
+        margin-bottom: 1.5rem;
+    }
+
+    .title {
+        width: 100%;
+        text-align: center;
+    }
+
+    .p__flex {
+        width: 100%;
+        text-align: center;
+        
+    }
+
+    .right__flex {
+        width: 100%;
+    }
+
+    .btn__purple__box {
+        width: 85%;
+        margin-bottom: 1.5rem;
+        
+    }
+
+    .box__input__white {
+        width: 85%;
+        padding: 1.5rem 1rem;
+    }
+
+    .input input {
+        margin-bottom: 0.4rem;
+    }
+
+    .btn__green {
+        margin-bottom: 1rem;
+    }
+}
+
+
+
+@media (max-width: 456px) {
+
+    .input input {
+        padding: 12px;
+    }
+}
+
+
+
+@media (max-width: 405px) {
+
+    .title {
+        font-size: 1.4rem;
+        margin-bottom: 1rem;
+    }
+
+    .p__flex {
+        font-size: 15px;
+    }
+
+    .btn_purple {
+        padding: 17px;
+    }
+
+
+
+}
